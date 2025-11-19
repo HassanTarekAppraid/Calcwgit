@@ -10,7 +10,7 @@ def subtract(num1, num2):
 
 #Welcome Message
 print("Welcome to H&H Git Practice Calculator :)\n"
-"Press - for Subtraction & + for Addition\n")
+"Press - for Subtraction & + for Addition\n") #welcome message
 
 #User select which operation to make
 selection = input("Select Operation (-,+): ")
@@ -22,12 +22,12 @@ num2 = float(input("Enter the Second Number: "))
 #If condition based on user selection
 if selection == '-':
     result=subtract(num1, num2)
-    print(num1,"-",num2, "=", result)
-elif selection == '+' :
+    print(num1,"-",num2, "=", result) #result
+elif selection == '+' : #condition for addition feature
     result=add(num1, num2)
-    print(num1,"+",num2, "=", result)
+    print(num1,"+",num2, "=", result) #result
 else:
-    print("this is an invalid operation")       
+    print("this is an invalid operation")   #if none of the operations changed    
 
 
 
