@@ -1,7 +1,8 @@
-def add(num1, num2): #function to add numbers
+#Addition Main Function
+def add(num1, num2):
     return num1 + num2
-
-def subtract(num1, num2): #function to subtract numbers
+#Subtract Main Function
+def subtract(num1, num2):
     return num1-num2
 
 #print(add(4, 2))
@@ -11,11 +12,15 @@ def subtract(num1, num2): #function to subtract numbers
 print("Welcome to H&H Git Practice Calculator :)\n"
 "Press - for Subtraction & + for Addition\n") #welcome message
 
-selection = input("Select Operation (-,+): ") #asks user to select operation
-num1 = float(input("Enter the First Number: ")) #asks user to enter first number
-num2 = float(input("Enter the Second Number: ")) #asks user to enter second number
+#User select which operation to make
+selection = input("Select Operation (-,+): ")
 
-if selection == '-': #if condition for subtraction feature
+#Getting the numbers from the user
+num1 = float(input("Enter the First Number: "))
+num2 = float(input("Enter the Second Number: "))
+
+#If condition based on user selection
+if selection == '-':
     result=subtract(num1, num2)
     print(num1,"-",num2, "=", result) #result
 elif selection == '+' : #condition for addition feature
