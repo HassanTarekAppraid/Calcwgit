@@ -1,5 +1,5 @@
-def add(a, b):
-    return a + b
+def add(num1, num2):
+    return num1 + num2
 
 def subtract(num1, num2):
     return num1-num2
@@ -17,8 +17,9 @@ num2 = float(input("Enter the Second Number: "))
 if selection == '-':
     result=subtract(num1, num2)
     print(num1,"-",num2, "=", result)
-else:
-    print("Invalid Operation Input")    
+elseif selection == '+' :
+    result=add(num1, num2)
+    print(num1,"-",num2, "=", result)   
 
 
 
